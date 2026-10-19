@@ -1,0 +1,24 @@
+ ------>>  Short terminal navigation  <<-------
+
+1. cd : Show current folder
+
+2. dir : List files and folders
+
+3. mkdir practice : Create a practice folder
+
+4. cd practice : Enter the practice folder
+
+5. dir : Show files in this folder
+
+6. cd .. : Return to the previous folder
+
+7. git --version : Check Git installation
+
+8. node -v : Check Node.js installation
+
+9. npm -v : Check npm installation
+
+10. cls : Clear the terminal
+
+
+I practised basic terminal navigation, learned how to create and enter folders, list directory contents, return to a parent directory, and check the installation of Git and Node.js. These commands will help me manage files and work with Git repositories for my HTML and CSS assignments.
