@@ -20,5 +20,11 @@
 
 10. cls : Clear the terminal
 
+The cd command is used to change the current directory.
+
+The cd .. command moves to the parent directory.
+
+The dir command lists files and folders in Windows Command Prompt.
+
 
 I practised basic terminal navigation, learned how to create and enter folders, list directory contents, return to a parent directory, and check the installation of Git and Node.js. These commands will help me manage files and work with Git repositories for my HTML and CSS assignments.
