@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e9;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-top: 2px;
+}
+
+.profile-card {
+    background-color: white;
+    width: 800px;
+    margin: 2px auto;
+    padding: 20px;
+    border: 1px solid #bdbdbd;
+}
+
+.profile-card h2 {
+    color: #333333;
+    margin-top: 2px;
+}
+
+.profile-card h3 {
+    color: #555555;
+    font-size: 18px;
+}
+
+.profile-card p {
+    color: #333333;
+    line-height: 1.5;
+}

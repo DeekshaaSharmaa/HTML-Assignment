@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Product Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            background-color: lightblue;
+            padding: 15px 25px;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        /* Main Layout */
+        .layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            margin: 20px 0;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #444444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 600px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar a {
+                display: inline-block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Product Store</h2>
+        <p>Useful products for everyday life</p>
+    </header>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <a href="#bags">Bags</a>
+            <a href="#books">Books</a>
+            <a href="#electronics">Electronics</a>
+            <a href="#accessories">Accessories</a>
+        </aside>
+
+        <main class="products">
+
+            <div class="product" id="bags">
+                <img src="https://placehold.co/300x200?text=Backpack" alt="Backpack">
+                <h3>Backpack</h3>
+                <p>Price: ₹599</p>
+            </div>
+
+            <div class="product" id="books">
+                <img src="https://placehold.co/300x200?text=Notebook" alt="Notebook">
+                <h3>Notebook</h3>
+                <p>Price: ₹80</p>
+            </div>
+
+            <div class="product" id="electronics">
+                <img src="https://placehold.co/300x200?text=Headphones" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Price: ₹499</p>
+            </div>
+
+            <div class="product" id="accessories">
+                <img src="https://placehold.co/300x200?text=Watch" alt="Watch">
+                <h3>Watch</h3>
+                <p>Price: ₹799</p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>My Grid-Based Project | HTML and CSS</p>
+    </footer>
+
+</body>
+</html>

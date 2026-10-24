@@ -5,10 +5,12 @@ p{
     font-size: 16px;
 }
 body{
-    margin: 0px;
-    background-color: rgb(235, 212, 185);
+    margin: 30px 5opx;
+    background-color: rgb(61, 15, 63);
    font-family: Arial, Helvetica, sans-serif;
-   color: darkblue;}
+   color: rgb(43, 2, 75);}
+
+
    .resume-container{
     display: flex;
     max-width: 1100px;
@@ -19,8 +21,8 @@ body{
    }
    .asidee{
     width: 35%;
-    background-color: #5f0867;
-    color: white;
+    background-color: #f0d7f2;
+    color: rgb(49, 16, 69);
     padding: 30px;
     box-sizing: border-box;
      text-align: justify;

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 70px 1fr 50px;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightblue;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .sidebar p {
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="header">
+            <h2>Student Dashboard</h2>
+        </header>
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <p>Home</p>
+            <p>My Courses</p>
+            <p>Assignments</p>
+            <p>Settings</p>
+        </aside>
+
+        <main class="main">
+            <h2>Welcome, Student!</h2>
+            <p>This is your dashboard.</p>
+
+            <h3>My Courses</h3>
+            <p>1. HTML and CSS</p>
+            <p>2. Java Programming</p>
+            <p>3. Artificial Intelligence</p>
+
+            <h3>Tasks</h3>
+            <p>Complete your practical assignments and update your progress.</p>
+        </main>
+
+        <footer class="footer">
+            <p>Student Dashboard Project</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Fix</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Fixed: content can adjust to the screen */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Fixed: no fixed width that forces overflow */
+        .card {
+            flex: 1;
+            min-width: 0;
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Fix for tablet screens */
+        @media (max-width: 800px) {
+            .container {
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .card {
+                padding: 12px;
+            }
+        }
+
+        /* Fix for mobile screens */
+        @media (max-width: 550px) {
+            .container {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Learning Page</h1>
+        <p>Responsive Design Practice</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>HTML</h2>
+            <img src="https://placehold.co/400x200?text=HTML" alt="HTML learning illustration">
+            <p>HTML is used to create the structure of a webpage.</p>
+        </section>
+
+        <section class="card">
+            <h2>CSS</h2>
+            <img src="https://placehold.co/400x200?text=CSS" alt="CSS learning illustration">
+            <p>CSS is used to style webpages and make them responsive.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>My Responsive Design Assignment</p>
+    </footer>
+
+</body>
+</html>

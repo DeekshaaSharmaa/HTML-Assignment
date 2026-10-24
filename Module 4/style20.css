@@ -1,0 +1,100 @@
+
+nav {
+    background-color: #795548;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 350px;
+}
+
+input, select {
+    padding: 8px;
+}
+
+/* task 25 styled pages */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    color: #344054;
+    margin: 0;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #17324d;
+    text-align: center;
+}
+
+h2 {
+    color: #087e8b;
+}
+
+nav {
+    background-color: #17324d;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #80d8cf;
+    text-decoration: underline;
+}
+
+body > h2,
+body > p,
+body > form {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #d6dce5;
+}
+
+input, select {
+    padding: 9px;
+    margin-top: 5px;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #087e8b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #065f68;
+}
+

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Student Profile</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .profile {
+            width: 30%;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cccccc;
+        }
+
+        .details {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cccccc;
+        }
+
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 12px;
+        }
+
+        /* Breakpoint 1: Tablet */
+        @media (max-width: 800px) {
+            .container {
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .profile {
+                width: 35%;
+            }
+        }
+
+        /* Breakpoint 2: Mobile */
+        @media (max-width: 500px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .profile {
+                width: auto;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Student Profile</h1>
+        <p>BCA Artificial Intelligence Student</p>
+    </header>
+
+    <div class="container">
+
+        <section class="profile">
+            <h2>About Me</h2>
+            <p>Name: Deeksha Sharma</p>
+            <p>Course: BCA (AI)</p>
+            <p>Year: First Year</p>
+        </section>
+
+        <section class="details">
+            <h2>My Learning</h2>
+            <p>I am learning HTML, CSS and Java programming.</p>
+
+            <h3>My Goals</h3>
+            <ul>
+                <li>Improve my coding skills</li>
+                <li>Build web projects</li>
+                <li>Learn Artificial Intelligence</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>My Responsive Webpage</p>
+    </footer>
+
+</body>
+</html>

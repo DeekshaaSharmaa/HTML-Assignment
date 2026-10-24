@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style16.css">
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+    <p>Fill in your details below.</p>
+
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="job">Select Job Role:</label><br>
+        <select id="job" name="job">
+            <option value="">Choose a role</option>
+            <option value="intern">Software Intern</option>
+            <option value="web">Web Developer</option>
+            <option value="ai">AI Intern</option>
+        </select>
+        <br><br>
+
+        <p>Skills:</p>
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="python" name="skills" value="Python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="html" name="skills" value="HTML CSS">
+        <label for="html">HTML and CSS</label>
+        <br><br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <label for="about">Tell us about yourself:</label><br>
+        <textarea id="about" name="about" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Apply Now">
+        <input type="reset" value="Clear Form">
+    </form>
+
+</body>
+</html>

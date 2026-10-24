@@ -1,0 +1,5 @@
+Design Choices – Multi-Page HTML Project
+
+I used a navy blue and teal colour palette to give my website a clean and professional look. I used Arial font because it is simple and easy to read. Consistent navigation links help users move between the Home, About, Registration, and Contact pages. I added spacing, light backgrounds, and simple form styling to improve readability. I also used CSS hover effects to make the navigation links interactive.
+
+The project was created using HTML and CSS.
